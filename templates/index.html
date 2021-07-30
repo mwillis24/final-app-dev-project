@@ -3,12 +3,22 @@
         <title>Welcome!</title>
         <link rel="stylesheet" href="../static/css/style.css">
     </head>
-    <body>
-        <h1>Hello world!</h1>
-        <p>We can build a full webpage here</p>
-        <form>
-            <input type="text" name="nickname" placeholder="Enter your nickname"/>
-            <input type="submit" value="Submit"/>
+    <body style="background-color:Thistle;">
+        <h1> Hello! Please input your info below:</h1>
+        <form method = "POST" action = "/results">
+            <h2><label for = "first_name"> What's your first name? </label>
+            <input type = "text" name = "first_name">
+            </h2>
+            <h2><label for = "task1"> What's your first/highest prioritized task?</label>
+            <input type = "text" name = "task1">
+            </h2>
+            <h2><label for = "task2"> What's your second/middle prioritized task?</label>
+            <input type = "text" name = "task2">
+            </h2>
+            <h2><label for = "task3"> What's your third/lowest prioritized task?</label>
+            <input type = "text" name = "task3">
+            </h2>
+            <input type= "submit">
         </form>
     </body>
 </html>

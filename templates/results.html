@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>To-do list!</title>
+        <link rel="stylesheet" href="../static/css/style.css">
+        <h1 style="text-align:center;"> Hello {{ user_name.capitalize() }}</h1>
+        <style>
+    h1 {
+        border-style: solid;
+    }
+    div{
+        border-style: solid;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+</style>
+    </head>
+    <body style="background-color:Thistle;">
+        <form method = "POST" action = "/index">
+        <h2 style="text-align:center;">
+            <div>
+                <input type="checkbox" id="user_task1" name="task1" value="user_task1">
+                <label for="user_task1"> {{ user_task1.capitalize() }}</label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="user_task2" name="task2" value="user_task2">
+                <label for="user_task2"> {{ user_task2.capitalize() }} </label><br>
+            </div>
+            <div>
+                <input type="checkbox" id="user_task3" name="task3" value="user_task3">
+                <label for="user_task3"> {{ user_task3.capitalize() }}</label><br>
+            </div>
+            <input type="submit" value="Submit">
+        </h2>
+        </form>
+    </body>
+</html>
